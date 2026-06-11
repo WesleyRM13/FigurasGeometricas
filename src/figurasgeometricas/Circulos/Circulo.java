@@ -30,7 +30,7 @@ public class Circulo extends Figuras {
         this.radio = radio;
     }
     
-    protected double calcularDiametro(){
+    private double calcularDiametro(){
         return radio*2;
     }
 
@@ -47,5 +47,12 @@ public class Circulo extends Figuras {
     protected double calcularArea(){
       return Math.pow(radio, 2)*Circulo.PI;
     }
+
+    @Override
+    public String toString() {
+        return "Circulo" + "\nradio=" + radio + "\ndiametro: " + getDiametro()+ "\nCircunferencia: " + getPerimetro() + "\nArea: " + getArea();
+    }
+    
+    
      
 }
