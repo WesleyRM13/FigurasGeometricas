@@ -9,15 +9,13 @@ package figurasgeometricas;
  * @author Student
  */
 public abstract class Figuras {
-    protected double area;
-    protected double perimetro;
 
-    public double getArea() {
-        return this.area;
+    protected double getArea() {
+        return this.calcularArea();
     }
 
-    public double getPerimetro() {
-        return perimetro;
+    protected double getPerimetro() {
+        return this.calcularPerimetro();
     }
 
     public abstract double calcularPerimetro();  
