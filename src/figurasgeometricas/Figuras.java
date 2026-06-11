@@ -18,8 +18,8 @@ public abstract class Figuras {
         return this.calcularPerimetro();
     }
 
-    public abstract double calcularPerimetro();  
-    public abstract double calcularArea();  
+    protected abstract double calcularPerimetro();  
+    protected abstract double calcularArea();  
     
     
     
